@@ -1,0 +1,229 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    margin-top: -18px;
+    transition:color 0.25s ;
+}
+
+/* Style for the navigation list */
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Style for buttons */
+button {
+    background-color: #8a6240;
+    color: #fff;
+    border: #8a6240;
+    border-radius: 5px;
+    padding: 13px 12px;
+    margin-left: -10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+    
+button:hover {
+    background-color: #fffefe;
+    box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+}
+
+
+
+/* Style for links */
+button a {
+    font-family:  sans-serif;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px rgb(59, 1, 1),  /* Soft black shadow */
+    0 0 25px rgb(255, 255, 255);  /* Glowing red shadow */
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+      
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 15px;
+        
+    }
+button {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+  
+}    
+
+h1 , {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-container{
+    background: #987554;
+    padding:30px;    
+    }
+
+body {
+    font-family:  sans-serif;
+    position:relative;
+    color: #ffffff;
+    margin:0px;
+    background-color: #554023;
+   
+}
+
+image {
+    padding: 50px;
+}
+
+
+#home h1 {
+    font-family: 'Arial', sans-serif;  /* Font style */
+    font-size: 20px;                   /* Font size */
+    color: #ffffff;                       /* Dark text color */
+    letter-spacing:9.0px;               /* Spacing between letters */
+    margin-left: 15px;
+    position: absolute;   
+    top:35px;
+          
+        /* Text shadow effect */
+        text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+        0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
+
+
+#LOGO{
+    position: absolute;
+    top: 1px ;
+    padding: 5px;
+    border-radius: 100px;
+    background:transparent;
+}
+/* Blinking effect for the image */
+#LOGO img {
+    width: 90px;  /* Image size */
+    border-radius: 100%;
+        
+}
+
+.img1{
+position: absolute;
+top: 580px;
+left: 20px;
+right:20px;
+border-radius: 10%;
+width: 500px;
+}
+
+.img2{
+    position: absolute;
+    top:230px;
+    right: 50px;
+    border-radius: 10%;
+    width:500px;
+    }
+
+.img3{
+    position: absolute;
+    top:935px;
+    right:20px;
+    border-radius: 10%;
+    width:500px;
+    
+    }
+/* Style for the gallery container */
+#Gallery {
+    display: flex;         /* Aligns images horizontally */
+    padding: 2px;         /* Adds some padding around the gallery */
+}
+
+
+/* Hover effect to expand the image */
+#Gallery img:hover {
+    transform: scale(1.0);  /* Expands the image to 150% of its original size */
+ box-shadow: 0 0px 5px 5px rgb(255, 162, 0);
+}
+
+  border: 5px solid black;
+  box-shadow: 0 5px 10px 0 black;
+}
+
+img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+  top: 20px;
+}
+
+.LABEL h1{
+    font-size: 35px;
+    text-align: center;
+    top:20px;
+    left:100px;
+    letter-spacing:9.0px;  
+}
+#info{
+    font-family: ' oswald', 'Arial ', sans-serif;
+    position: absolute;
+    background-color: #987554;
+    word-spacing:50%;
+    font-size: 20px;
+    top: 300px;
+    left:50px;
+    margin-left: 2px;
+    right:570px;
+    border-radius: 20px;   
+    text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+    0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
+#info2{
+    font-family: ' oswald', 'Arial ', sans-serif;
+    position: absolute;
+    background-color: #987554;
+    word-spacing:50%;
+    font-size: 20px;
+    top: 1000px;
+    left:50px;
+    right:550px;
+    border-radius: 20px;   
+    text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+    0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
+#info1{
+    font-family: ' oswald', 'Arial ', sans-serif;
+    position: absolute;
+    background-color: #987554;
+    word-spacing: 70%;
+    font-size: 20px;
+    top:610px;
+    right: 20px;
+    left:550px;
+    border-radius: 20px;
+    text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+    0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
