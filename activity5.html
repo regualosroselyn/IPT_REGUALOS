@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>MDAS Calculator & Font Size Adjuster</title>
+</head>
+
+<body>
+    
+<style> 
+body {
+  font-family: Arial, sans-serif;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+h1 {
+  font-family: serif;
+  margin: 10px 0;
+  text-align: center;
+  background-color: #714f39;
+  color: white;
+  padding:10px;
+  border-radius:50px
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+input[type="number"] {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 150px;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007acc;
+}
+
+button {
+  font-family: serif;
+  padding: 10px 50px;
+  margin: 5px 5px;
+  border: none;
+  background-color: #ad7a57;
+  color: #fff;
+  cursor: pointer;
+  border-radius:5%;
+  border-radius:50px;
+}
+
+button:hover {
+  background-color: ##8c5c23ae;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 20px;
+  color:#7c521f;
+  margin-top: px;
+  font-family: serif;
+}
+
+</style>
+  <h1>THE MDAS ORDER </h1>
+  <br>
+  <input type="number multiplication" id="num1" placeholder="Enter Number:">
+  </br>
+  <br>
+  <input type="number multiplication" id="num2" placeholder="Enter Number:">
+  </br>
+  <br>
+  <input type="number division" id="num3" placeholder="Enter Number:">
+  </br>
+  <br>
+  <input type="number addition" id="num4" placeholder="Enter Number:">
+  </br>
+  <br>
+  <input type="number subtraction" id="num5" placeholder="Enter Number:">
+  </br>
+
+  <button onclick="calculateMDAS()">Calculate</button>
+  <p id="result"></p>
+ 
+  <p id="result" style="font-size: 5px;"></p>
+  <button onclick="increaseFontSize()">Increase Font Size</button>
+  <button onclick="decreaseFontSize()">Decrease Font Size</button>
+
+  <script>
+    // Function to calculate based on MDAS order
+    function calculateMDAS() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const num3 = parseFloat(document.getElementById('num3').value);
+      const num4 = parseFloat(document.getElementById('num4').value);
+      const num5 = parseFloat(document.getElementById('num5').value);
+
+   if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {
+        document.getElementById("result").textContent = "Please enter all five numbers.";
+        return;
+    }
+    let result = (num1 * num2) / num3 + num4 - num5;
+    document.getElementById("result").textContent = "Result: " + result;
+    }
+
+let fontSize = 20;
+
+function increaseFontSize() {
+    fontSize += 2;
+    document.getElementById("result").style.fontSize = fontSize + "px";
+}
+
+function decreaseFontSize() {
+    fontSize -= 2;
+    document.getElementById("result").style.fontSize = fontSize + "px";
+}
+  </script>
+
+</body>
+</html>
 
